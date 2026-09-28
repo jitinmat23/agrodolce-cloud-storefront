@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#424e33"><meta name="description" content="Agrodolce: small-batch artisanal bakes, desserts, and sweet celebrations. Request pickup in Devanahalli, Bengaluru.">
+  <title>Agrodolce · A little sweetness, thoughtfully made</title>
+  <link rel="icon" href="/images/brand-mark.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://images.unsplash.com">
+  <link rel="stylesheet" href="/src/styles/main.css">
+  <script type="module" src="/src/app.js"></script>
+</head>
+<body>
+<a class="skip-link" href="#menu">Skip to menu</a>
+<div class="topline">SMALL BATCHES. BIG HEART. <span>Handcrafted in Devanahalli, Bengaluru</span></div>
+<header class="header wrap">
+  <a class="wordmark" href="#" aria-label="Agrodolce home"><img src="/images/brand-mark.svg" alt="" width="44" height="44"><span>AGRODOLCE<small>ARTISANAL BAKES & LITTLE JOYS</small></span></a>
+  <nav aria-label="Main navigation"><a href="#menu">Our bakes</a><a href="#story">Our story</a><a href="#baker">Meet the baker</a><a href="#special">Special occasions</a></nav>
+  <button class="basket-toggle" id="open-basket" aria-haspopup="dialog"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M5 8h14l1 13H4L5 8Z M8 8V6a4 4 0 0 1 8 0v2"/></svg><span>Your basket</span><b id="basket-count">0</b></button>
+</header>
+<main>
+<section class="hero wrap">
+  <div class="hero-copy"><p class="eyebrow"><span class="tiny-star">✳</span> FROM OUR HOME, WITH LOVE</p><h1>A little sweetness.<br>A lot of <em>heart.</em></h1><p class="intro">Thoughtfully made cakes, comforting bakes, and little reasons to celebrate. Baked in small batches, just for you.</p><div class="hero-actions"><a class="button" href="#menu">Explore our bakes <span>↗</span></a><a class="text-link" href="#special">Special orders <span aria-hidden="true">→</span></a></div><div class="hero-note"><span>✧</span> Homemade with care. Meant to be shared.</div></div>
+  <div class="hero-visual"><img class="hero-photo" src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=1200&q=90" alt="A chocolate celebration cake with berries" fetchpriority="high"><div class="round-stamp">BAKED WITH LOVE<span>✳</span>ENJOYED WITH JOY</div><div class="photo-caption">A slice of something lovely.</div></div>
+</section>
+<div class="values-strip"><span>Small-batch goodness</span><i>✧</i><span>Thoughtfully chosen ingredients</span><i>✧</i><span>Made to order</span><i>✧</i><span>A personal touch</span></div>
+<section class="section wrap" id="menu"><div class="section-heading"><div><p class="eyebrow">THE EVERYDAY, MADE SWEETER</p><h2>From our little kitchen</h2></div><p>For your coffee breaks, happy moments,<br>and just-because cravings.</p></div><div class="menu-toolbar"><div class="filters" id="filters" aria-label="Filter bakes"></div><span class="small-note">Freshly made · Pickup only</span></div><p class="preview-label" id="preview-note">A taste of what’s to come: sample menu, prices & photographs.</p><div class="product-grid" id="products"></div></section>
+<section class="story" id="story"><div class="wrap story-grid"><div class="story-art"><img src="https://images.unsplash.com/photo-1499636136210-6f4ee915583e?auto=format&fit=crop&w=900&q=85" alt="A batch of homemade chocolate chip cookies" loading="lazy"><span class="handwritten">a little flour,<br>a whole lot of love.</span></div><div class="story-copy"><p class="eyebrow">THE HEART BEHIND THE BAKES</p><h2>A home kitchen.<br>A sweet little dream.</h2><p>Agrodolce began with a love for beautiful bakes, good ingredients, and the simple joy of making something from scratch.</p><p>From indulgent cakes to delicate desserts, every bake is made in small batches, with a little extra care and a whole lot of love.</p><div class="signature">Here’s to sweet beginnings.</div><span class="small-note">AGRODOLCE · DEVANAHALLI, BENGALURU</span></div></div></section>
+<section class="section wrap baker-section" id="baker" aria-labelledby="baker-title">
+  <div class="baker-portrait" role="img" aria-label="Placeholder for the baker’s portrait">
+    <span class="baker-flourish" aria-hidden="true">✧</span>
+    <span class="baker-monogram" aria-hidden="true">A</span>
+    <span class="baker-photo-note">The baker’s portrait, coming soon</span>
+  </div>
+  <div class="baker-copy">
+    <p class="eyebrow">MEET THE BAKER</p>
+    <h2 id="baker-title">The hands behind<br>your happy moments.</h2>
+    <p>Behind Agrodolce is a home baker in Devanahalli, Bengaluru, creating small-batch bakes for everyday treats and special occasions.</p>
+    <!-- Replace this placeholder with the baker's approved name and introduction. -->
+    <p class="baker-bio-placeholder">A personal introduction from the baker is coming soon.</p>
+    <a class="text-link" href="#special">Let’s plan something sweet <span aria-hidden="true">→</span></a>
+  </div>
+</section>
+<section class="section wrap special-layout" id="special"><div class="special-copy"><p class="eyebrow">FOR YOUR SOMETHING SPECIAL</p><h2>Your occasion.<br>Our little <em>touch.</em></h2><p>A birthday, an anniversary, or simply a reason to gather. Tell us a little about what you have in mind, and we’ll make it sweeter.</p><ul class="occasion-list"><li><span>01</span>Choose a few lovely details</li><li><span>02</span>Tell us when you’re celebrating</li><li><span>03</span>We’ll get in touch to make it yours</li></ul><p class="quote-note">Price confirmed by the baker.<br>Every enquiry is a conversation, not a confirmed order.</p></div><form id="special-form" class="enquiry-card"><div class="form-heading"><h3>Let’s make it special</h3><span>✧</span></div><p class="small-note">A few details to get us started.</p><div id="special-options" class="form-grid"></div><label>Other requirements <span class="optional">(optional)</span><textarea name="requirements" rows="3" maxlength="1500" placeholder="Dietary needs, allergies, or a little detail we should know…"></textarea></label><div class="contact-fields" id="special-contact"></div><p class="form-note">We’ll confirm whether dietary requests can be accommodated. Your details are used to respond to your enquiry.</p><div class="honeypot" aria-hidden="true"><label>Leave this empty<input name="website" tabindex="-1" autocomplete="off"></label></div><button type="submit" class="button full">Send a special enquiry <span>↗</span></button><p class="form-feedback" role="status" aria-live="polite"></p></form></section>
+<section class="how-it-works"><div class="wrap"><p class="eyebrow">A FEW SIMPLE STEPS</p><h2>From our oven to your table</h2><div class="steps"><article><span>01 / CHOOSE</span><h3>Find your favourites</h3><p>Add your bakes to a basket or send us a special enquiry.</p></article><article><span>02 / CONNECT</span><h3>We’ll confirm the details</h3><p>The baker will contact you with availability, pricing, and next steps. No online payment.</p></article><article><span>03 / COLLECT</span><h3>Pick up a little happiness</h3><p>Pickup in Devanahalli, Bengaluru. The exact address is shared privately after confirmation.</p></article></div></div></section>
+<section class="section wrap subscribe-section" id="subscribe" aria-labelledby="subscribe-title">
+  <div>
+    <p class="eyebrow">FRESH FROM OUR KITCHEN</p>
+    <h2 id="subscribe-title">Be first to hear<br>what’s baking.</h2>
+    <p class="subscribe-intro">New bakes, little treats, and something lovely to look forward to. Choose how you’d like to hear from us.</p>
+  </div>
+  <form id="subscribe-form" class="enquiry-card">
+    <fieldset class="subscribe-channels">
+      <legend>Send me new-product updates by</legend>
+      <label><input type="checkbox" name="channel" value="email" checked> Email</label>
+      <label><input type="checkbox" name="channel" value="whatsapp"> WhatsApp</label>
+    </fieldset>
+    <label id="subscribe-email-field">Email address<input type="email" name="email" autocomplete="email" maxlength="254" placeholder="you@example.com" required></label>
+    <label id="subscribe-phone-field" hidden>WhatsApp number<input type="tel" name="phone" autocomplete="tel" maxlength="25" placeholder="+91 98765 43210" disabled><span class="small-note">Include your country code.</span></label>
+    <label class="subscribe-consent"><input type="checkbox" name="consent" required><span>I agree to receive new-product updates from Agrodolce through my selected channels.</span></label>
+    <div class="honeypot" aria-hidden="true"><label>Leave this empty<input name="website" tabindex="-1" autocomplete="off"></label></div>
+    <button class="button full" type="submit">Subscribe <span aria-hidden="true">↗</span></button>
+    <p class="form-feedback" role="status" aria-live="polite"></p>
+  </form>
+</section>
+</main>
+<footer class="wrap footer"><a class="wordmark" href="#">AGRODOLCE<small>HOMEMADE WITH LOVE</small></a><p>Little batches. Lovely moments.</p><a href="https://www.instagram.com/agrodolce_soozie/" target="_blank" rel="noopener noreferrer">Follow our baking story ↗</a><small>© <span id="year"></span> Agrodolce</small></footer>
+<dialog id="basket-dialog" aria-labelledby="basket-title"><div class="drawer-heading"><div><p class="eyebrow">A LITTLE BOX OF JOY</p><h2 id="basket-title">Your basket</h2></div><button id="close-basket" class="icon-button" aria-label="Close basket">×</button></div><div id="basket-items"></div><div id="basket-checkout"><div class="basket-total"><span>Estimated total</span><strong id="basket-total"></strong></div><p class="form-note">No payment now. The baker will confirm availability and your preferred pickup time.</p><form id="order-form"><div class="contact-fields" id="order-contact"></div><p class="form-note">Your details are used to arrange your order. Pickup address shared after confirmation.</p><div class="honeypot" aria-hidden="true"><label>Leave this empty<input name="website" tabindex="-1" autocomplete="off"></label></div><button type="submit" class="button full">Request your bakes <span>↗</span></button><p class="form-feedback" role="status" aria-live="polite"></p></form></div><div id="order-success" role="status" hidden></div></dialog>
+<div id="toast" role="status" aria-live="polite"></div>
+<noscript><p class="noscript">Please enable JavaScript to browse the menu and submit requests.</p></noscript>
+</body></html>
